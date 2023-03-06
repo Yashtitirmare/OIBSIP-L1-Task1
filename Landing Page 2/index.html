@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to YASH MOTORS</title>
+    <link rel="icon" href="./Assets/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="nav-top">
+      <div class="nav-bar nav-white nav-card" id="myNavbar">
+        <a href="#home" class="nav-bar-item nav-button nav-wide"><img src="./Assets/logo.png" width="30px"> YASH MOTORS</a>
+        <!-- Right-sided navbar links -->
+        <div class="nav-right nav-hide-small">
+          <a href="#about" class="nav-bar-item nav-button">About</a>
+          <a href="#new_bikes" class="nav-bar-item nav-button">New Bikes</a>
+          <a href="#new_scooters" class="nav-bar-item nav-button"
+            >New Scooters</a
+          >
+          <a href="#electric_bikes" class="nav-bar-item nav-button"
+            >Electric Bikes</a
+          >
+          <a href="#contact" class="nav-bar-item nav-button">Contact</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="nav-bar-item nav-button nav-right nav-hide-large nav-hide-medium"
+          onclick="nav_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="nav-sidebar nav-bar-block nav-black nav-card nav-animate-left nav-hide-medium nav-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="nav_close()"
+        class="nav-bar-item nav-button nav-large nav-padding-16"
+        >X</a
+      >
+      <a href="#about" onclick="nav_close()" class="nav-bar-item nav-button"
+        >About</a
+      >
+      <a href="#new_bikes" onclick="nav_close()" class="nav-bar-item nav-button"
+        >New Bikes</a
+      >
+      <a
+        href="#new_scooters"
+        onclick="nav_close()"
+        class="nav-bar-item nav-button"
+        >New Scooters</a
+      >
+      <a
+        href="#electric_bikes"
+        onclick="nav_close()"
+        class="nav-bar-item nav-button"
+        >Electric Bikes</a
+      >
+      <a href="#contact" onclick="nav_close()" class="nav-bar-item nav-button"
+        >Contact</a
+      >
+    </nav>
+    <!-- Header -->
+    <header
+      class="bgimage header-display-container header-grayscale-min"
+      id="home"
+    >
+      <div class="header-display-left header-text-white" style="padding: 48px">
+        <span class="header-jumbo header-hide-small"
+          >Get Ready to Experience the Thrill of Bikes.</span
+        ><br />
+        <span class="header-xxlarge header-hide-large header-hide-medium"
+          >Get Ready to Experience the Thrill of Bikes</span
+        ><br />
+        <span class="header-large"
+          >Get ready to explore the latest collections of bikes in our
+          showroom.</span
+        >
+        <p>
+          <a
+            href="#about"
+            class="header-button header-white header-padding-large header-large header-margin-top header-opacity header-hover-opacity-off"
+            >Explore</a
+          >
+        </p>
+      </div>
+      <div
+        class="header-display-bottomleft header-text-grey header-large"
+        style="padding: 24px 40px"
+      >
+        <i
+          class="fa fa-facebook-official header-hover-opacity header-padding-left"
+        ></i>
+        <i class="fa fa-instagram header-hover-opacity header-padding-left"></i>
+        <i class="fa fa-linkedin header-hover-opacity header-padding-left"></i>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="about-container" style="padding: 128px 16px" id="about">
+      <h3 class="about-center">ABOUT THE COMPANY</h3>
+      <p class="about-center about-large">Key features of our company</p>
+      <div class="about-row-padding about-center" style="margin-top: 64px">
+        <div class="about-quarter">
+          <i
+            class="fa fa-desktop about-margin-bottom about-jumbo about-center"
+          ></i>
+          <p class="about-large">Responsive</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="about-quarter">
+          <i class="fa fa-heart about-margin-bottom about-jumbo"></i>
+          <p class="about-large">Passion</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="about-quarter">
+          <i class="fa fa-diamond about-margin-bottom about-jumbo"></i>
+          <p class="about-large">Design</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="about-quarter">
+          <i class="fa fa-cog about-margin-bottom about-jumbo"></i>
+          <p class="about-large">Support</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bike Section -->
+    <div class="bike-container">
+      <h3 class="bike-center" id="new_bikes">New Bikes Collection</h3>
+      <p class="bike-center bike-large">The ones who blows your mind</p>
+      <div class="bike-row-padding bike-grayscale" style="margin-top: 64px">
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/bike1.png" alt="Ronin" style="width: 100%" />
+            <div class="bike-container">
+              <h3>TVS Ronin</h3>
+              <p class="bike-opacity">₹1.49 Lakh - ₹1.70 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/bike2.png" alt="Enfield" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Royal Enfeild 350</h3>
+              <p class="bike-opacity">₹1.52 Lakh - ₹2.21 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/bike3.png" alt="KTM" style="width: 100%" />
+            <div class="bike-container">
+              <h3>KTM 290</h3>
+              <p class="bike-opacity">₹3.16 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/bike4.png" alt="Hunter" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Hunter 350</h3>
+              <p class="bike-opacity">₹1.5 Lakh - ₹1.72 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Scooter Section -->
+    <div class="bike-container">
+      <h3 class="bike-center" id="new_scooters">New Scooters Collection</h3>
+      <p class="bike-center bike-large">
+        The all in one scooters that fruitful for your pocket
+      </p>
+      <div class="bike-row-padding bike-grayscale" style="margin-top: 64px">
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/Activa1.png" alt="Activa" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Activa 6G</h3>
+              <p class="bike-opacity">₹74,177 - ₹81,999</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img
+              src="./Assets/Jupiter1.png"
+              alt="TVS Jupiter"
+              style="width: 100%"
+            />
+            <div class="bike-container">
+              <h3>TVS Jupiter 125</h3>
+              <p class="bike-opacity">₹82,450 - ₹94,550</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img
+              src="./Assets/Hero_Xoom_110.png"
+              alt="Hero Xoom"
+              style="width: 100%"
+            />
+            <div class="bike-container">
+              <h3>Hero Xoom 110</h3>
+              <p class="bike-opacity">₹68,599 - ₹76,599</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img
+              src="./Assets/Pleasure1.png"
+              alt="Pleasure"
+              style="width: 100%"
+            />
+            <div class="bike-container">
+              <h3>Hero Pleasure + Xtec</h3>
+              <p class="bike-opacity">₹68,965 - ₹72,424</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Electric Motors Section -->
+    <div class="bike-container">
+      <h3 class="bike-center" id="electric_bikes">
+        New Electric Moto Collection
+      </h3>
+      <p class="bike-center bike-large">
+        The all in one scooters that fruitful for your pocket
+      </p>
+      <div class="bike-row-padding bike-grayscale" style="margin-top: 64px">
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/Bajaj1.png" alt="Chetak" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Bajaj Chetak</h3>
+              <p class="bike-opacity">₹1.52 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/Ather2.png" alt="Ather" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Ather 450X</h3>
+              <p class="bike-opacity">₹1.19 Lakh - ₹1.42 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bike-col l3 m6 bike-margin-bottom">
+          <div class="bike-card">
+            <img src="./Assets/F771.png" alt="F77" style="width: 100%" />
+            <div class="bike-container">
+              <h3>Ultraviolette F77</h3>
+              <p class="bike-opacity">₹3.80 Lakh - ₹5.50 Lakh</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum, eveniet.
+              </p>
+              <p>
+                <button class="bike-button bike-light-grey bike-block">
+                  Buy Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="contacts-container contacts-light-grey"
+      style="padding: 128px 16px"
+      id="contact"
+    >
+      <h3 class="contacts-center">Contact Us</h3>
+      <p class="contacts-center contacts-large">
+        Lets get in touch. Send us a message:
+      </p>
+      <div style="margin-top: 48px">
+        <p>
+          <i
+            class="fa fa-map-marker fa-fw contacts-xxlarge contacts-margin-right"
+          ></i>
+          Maharashtra, IN
+        </p>
+        <p>
+          <i
+            class="fa fa-phone fa-fw contacts-xxlarge contacts-margin-right"
+          ></i>
+          Phone: +91 1515151515
+        </p>
+        <p>
+          <i
+            class="fa fa-envelope fa-fw contacts-xxlarge contacts-margin-right"
+          >
+          </i>
+          Email: mail@mail.com
+        </p>
+        <br />
+        <form action="#" target="_blank">
+          <label for="name">Name</label>
+          <p>
+            <input
+              class="contacts-input contacts-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+
+          <label for="email">Email</label>
+          <p>
+            <input
+              class="contacts-input contacts-border"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+
+          <p><label for="country">Country</label></p>
+          <select name="country" class="contacts-input contacts-border">
+            <option value="india" default>India</option>
+          </select>
+
+          <p><label for="state" >State</label></p>
+          <select name="state" class="contacts-input contacts-border">
+            <option value="state">Select Your State</option>
+            <option value="mh">Maharashtra</option>
+            <option value="dl">Delhi</option>
+          </select>
+
+          <p><label for="city">City</label></p>
+          <select name="city" class="contacts-input contacts-border">
+            <option value="select">Slect Your City</option>
+            <option value="ng">Nagpur</option>
+            <option value="am">Amravati</option>
+            <option value="mu">Navi Mumbai</option>
+            <option value="kd">Kalyan-Dombivli</option>
+          </select>
+
+          <p><label for="subject">Subject</label></p>
+          <p>
+            <input
+              class="contacts-input contacts-border"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+
+          <p><label for="msg">Message</label></p>
+          <p>
+            <textarea class="contacts-border msg-container" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </p>
+          <p>
+            <button class="contacts-button contacts-black" type="submit" disabled>
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              <span class="tooltiptext">Please Fill the details</span>
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer fa fa-arrow-up-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <footer class="footer-center footer-black footer-padding-64">
+      <h1 id="#home" class="logo-glow">YASH MOTORS</h1>
+      <div class="footer-xlarge footer-section">
+        <i class="fa fa-facebook-official footer-hover-opacity"></i>
+        <i class="fa fa-instagram footer-hover-opacity"></i>
+        <i class="fa fa-linkedin footer-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a href="#home" target="_blank" class="footer-hover-text-green"
+          >@yash.motors</a
+        >
+      </p>
+    </footer>
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function nav_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function nav_close() {
+        mySidebar.style.display = "none";
+      }
+
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // When the user not fillin detail the button unable to submit
+      let input = document.querySelector(".contacts-input");
+      let button = document.querySelector(".contacts-button");
+      button.disabled = true;
+      input.addEventListener("change", stateHandle)
+
+      function stateHandle(){
+        if(document.querySelector(".contacts-input").value === ""){
+          button.disabled = true;
+        }
+        else{
+          button.disabled = false; 
+        }
+      }
+    </script>
+  </body>
+</html>
